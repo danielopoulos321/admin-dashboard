@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 li{
     list-style-type: none;
     padding: 1em;
@@ -19,6 +20,11 @@ li{
     grid-column: 2/6;
     grid-row: 1/2;
     background-color: thistle;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: space-between;
+    padding: 1em;
 }
 
 .sidebar{
@@ -34,8 +40,39 @@ li{
     grid-column: 2/6;
     background-color: blueviolet;
     display: grid;
+    grid-template-columns: 5fr 2fr;
+    overflow: hidden;
 }
 
 .logo{
     align-self: center;
+}
+
+.right, .buttons{
+    justify-self: center;
+}
+
+.projects{
+    display: grid;
+    gap: 2em;
+    padding: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 4fr;
+    overflow-y: scroll;
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
+  }
+
+.card{
+    height: 150px;
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+.news{
+    padding: 2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }

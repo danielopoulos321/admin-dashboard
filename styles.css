@@ -24,7 +24,7 @@
 .header{
     grid-column: 2/6;
     grid-row: 1/2;
-    background-color: #526D82;
+    background-color: #0077b6;
     color: #DDE6ED;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 7px 0px;
@@ -52,7 +52,7 @@
     width: 180px;
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: #27374D;
+    background: linear-gradient(to top, #84CEEB, #4391DC);
     display: grid;
     grid-template-rows: 480px;
     justify-items: start;
@@ -71,15 +71,6 @@
 .logo{
     font-size: 1.5em;
 }
-
-.content{
-    grid-column: 2/6;
-    background-color: #DDE6ED;
-    display: grid;
-    grid-template-columns: 6fr 2fr;
-    overflow: hidden;
-}
-
 
 .search{
     grid-column: 1/5;
@@ -158,11 +149,19 @@ button{
     border: none;
     border-radius: 1em;
     color: #DDE6ED;
-    background-color: #27374D;
+    background-color: #03045e;
 }
 
 button:hover{
     background-color: #27374d4e;
+}
+
+.content{
+    grid-column: 2/6;
+    background: linear-gradient(to top, #8aedff, #e3f5f9);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    overflow: hidden;
 }
 
 .projects{
@@ -179,13 +178,13 @@ button:hover{
     grid-column: 1/-1;
 }
 
-.projects::-webkit-scrollbar {
+.projects::-webkit-scrollbar,  .news::-webkit-scrollbar{
     display: none;
   }
 
 .card{
     height: 175px;
-    background-color: #9DB2BF;
+    background-color: #c6e5f9df;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px 0px;
     padding: 1em;
     border-radius: 1em;
@@ -197,6 +196,8 @@ button:hover{
 }
 
 .news{
+    width: 200px;
+    overflow-y: scroll;
     padding: 2em;
     padding-left: 1em;
     display: grid;
@@ -205,10 +206,45 @@ button:hover{
 }
 
 .news-item{
-    background-color: #9DB2BF;
-    padding: 1em;
+    background-color: #c6e5f9df;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px 0px;
+    padding: 1.2em;
     border-radius: 1em;
     transition: transform 0.3s ease;
+}
+
+.news-item>p{
+    font-size: .7em;
+    color: #27374D;
+}
+
+.accounts{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 60px;
+    grid-auto-rows: 60px;
+    align-items: center;
+    column-gap: 1em;
+    font-size: 1.1em;
+}
+
+.accounts > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+p > span{
+    font-size: .7em;
+    color: #27374D;
+}
+
+.line{
+    content: '';
+    display: block;
+    height: 1px;
+    margin: .5em;
+    background-color: #27374D;
 }
 
 

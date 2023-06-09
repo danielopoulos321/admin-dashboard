@@ -5,42 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9b71300138.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
-            <div class="menu">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                    <li></li>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-bars logo"></i><p class="logo">Dashboard</p>
+                        <div></div><div></div>
+                        <i class="fa-solid fa-house"></i><p>Home</p>
+                        <i class="fa-solid fa-user"></i> <p>Profile</p>
+                        <i class="fa-solid fa-envelope"></i><p>Messages</p>
+                        <i class="fa-solid fa-clock-rotate-left"></i><p>History</p>
+                        <i class="fa-solid fa-layer-group"></i><p>Tasks</p>
+                        <i class="fa-solid fa-people-group"></i><p>Communities</p>
+                        <div></div><div></div>
+                        <i class="fa-solid fa-gear"></i><p>Settings</p>
+                        <i class="fa-solid fa-circle-question"></i><p>Support</p>
+                        <i class="fa-solid fa-user-shield"></i><p>Privacy</p>
+                    </div>
         </div>
         <div class="header">
-            <input type="search">
-            <div class="right">Daniel Anestopoulos</div>
-            <div>
-                <p>Welcome,</p>
-                <h2>Daniel Anestopoulos</h2>
+            <div class="top">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="profile-pic.jpeg" alt="profile-pic">
+                    <h3>Daniel Anestopoulos</h3>
             </div>
-            <div class="buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="bottom">
+                <div class="user-info">
+                    <img src="profile-pic.jpeg" alt="profile-pic">
+                    <div>
+                        <p>Welcome,</p>
+                        <h2>Daniel Anestopoulos</h2>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="projects">
+                <h2>My Projects</h2>
                 <div class="card">
                     <h3>Project Uno</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam repellendus fugiat minima ratione natus doloribus consectetur aspernatur iste quidem. Eligendi fugit aliquid vitae ipsa nisi voluptatum reiciendis sunt dolorum similique.</p>
@@ -65,9 +76,25 @@
                     <h3>Project Seize</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam repellendus fugiat minima ratione natus doloribus consectetur aspernatur iste quidem. Eligendi fugit aliquid vitae ipsa nisi voluptatum reiciendis sunt dolorum similique.</p>
                 </div>
+                <div class="card">
+                    <h3>Project Siete</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam repellendus fugiat minima ratione natus doloribus consectetur aspernatur iste quidem. Eligendi fugit aliquid vitae ipsa nisi voluptatum reiciendis sunt dolorum similique.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Ocho</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam repellendus fugiat minima ratione natus doloribus consectetur aspernatur iste quidem. Eligendi fugit aliquid vitae ipsa nisi voluptatum reiciendis sunt dolorum similique.</p>
+                </div>
             </div>
             <div class="news">
-                
+                <h2>What's New</h2>
+                <div class="news-item">
+                    <h3>Breaking News</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam repellendus fugiat minima ratione natus doloribus consectetur aspernatur iste quidem. Eligendi fugit aliquid vitae ipsa nisi voluptatum reiciendis sunt dolorum similique.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Announcement</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam repellendus fugiat minima ratione natus doloribus consectetur aspernatur iste quidem. Eligendi fugit aliquid vitae ipsa nisi voluptatum reiciendis sunt dolorum similique.</p>
+                </div>
             </div>
         </div>
     </div>

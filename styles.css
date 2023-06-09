@@ -183,16 +183,35 @@ button:hover{
   }
 
 .card{
+    display: flex;
     height: 175px;
     background-color: #c6e5f9df;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px 0px;
     padding: 1em;
     border-radius: 1em;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .card:hover, .news-item:hover{
     transform: translateY(-5px);
+}
+
+.card> img{
+    height: 100%;
+    border: #84CEEB 2px solid;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px 0px;
+}
+
+.card>div{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.card>div>p{
+    padding-top: .2em;
+    color: #27374daf ;
 }
 
 .news{
